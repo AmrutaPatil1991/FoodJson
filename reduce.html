@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1,2,3,4,5];
+
+        let display = a.reduce(function(pre,val){
+           console.log(`preavious value is: ${pre}, current value is: ${val} `)
+            return pre + val;
+        },0);
+        console.log("display",display);
+    
+    let myArray = [1,1,2,2,3,3,4,4]
+let display2 = myArray.reduce(function(p,v){
+    if(p.includes(v) == false){
+        p.push(v)
+    }
+    return p;
+
+},[]) ;   
+    console.log("new array : "+display2)
+    </script>
+    
+</body>
+</html>
